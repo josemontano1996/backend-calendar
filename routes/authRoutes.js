@@ -4,13 +4,9 @@ host + /api/auth
  */
 const { Router } = require('express');
 const { check } = require('express-validator');
-const {inputValitadionMiddleware} = require('../middlewares/inputValidationMiddleware');
-
-const {
-  createUser,
-  loginUser,
-  renewToken,
-} = require('../controllers/authControllers');
+const { inputValitadionMiddleware } = require('../middlewares/inputValidationMiddleware');
+const { createUser, loginUser, renewToken } = require('../controllers/authControllers');
+const { validateJWT } = require('../middlewares/validateJWT');
 
 const router = Router();
 
@@ -29,15 +25,12 @@ router.post(
   '/',
   [
     check('email', 'Email is mandatory').isEmail(),
-    check(
-      'password',
-      'Password must have a minimum length of 6 characters'
-    ).isLength(6),
+    check('password', 'Password must have a minimum length of 6 characters').isLength(6),
     inputValitadionMiddleware,
   ],
   loginUser
 );
 
-router.get('/renew', renewToken);
+router.get('/renew', validateJWT, renewToken);
 
 module.exports = router;
