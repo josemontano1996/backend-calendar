@@ -7,8 +7,8 @@ The whole point of the App is to create a team calendar webpage using React, whe
 Depending on who created the events different permissions for modifying the events are given as well as different physical appearance.
 
 You can visit our Client side app in the following links: 
-- [Calendar Web](https://thriving-moonbeam-22f2bd.netlify.app){target="_blank"}
-- [Github Client Side Code](https://github.com/josemontano1996/react-calendar-app){target="_blank"}
+- [Calendar Web](https://thriving-moonbeam-22f2bd.netlify.app)
+- [Github Client Side Code](https://github.com/josemontano1996/react-calendar-app)
 
 ## Technologies Used
 
