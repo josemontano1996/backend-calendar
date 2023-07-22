@@ -2,13 +2,13 @@
 
 This is the REST API for my Calendar React Application. With it, we handle authentication and authorization via JWT and provide rights to create, update, or delete events from the calendar stored in our MongoDB database. Additionally, the API incorporates input validation to ensure we only handle valid requests on the server-side. Our database is also closed so only certain IPs are allowed to interact with it.
 
-The whole point of the App is to create a team calendar webpage, where people from the same team can register and log in to create events in a shared calendar for better organization, all the user and events data come through this API and are properly handled. 
+The whole point of the App is to create a team calendar webpage using React, where people from the same team can register and log in to create events in a shared calendar for better organization, all the user and events data come through this API and are properly handled. 
 
 Depending on who created the events different permissions for modifying the events are given as well as different physical appearance.
 
 You can visit our Client side app in the following links: 
--[Calendar Web](https://thriving-moonbeam-22f2bd.netlify.app)
--[Github Client Side Code](https://github.com/josemontano1996/react-calendar-app)
+- [Calendar Web](https://thriving-moonbeam-22f2bd.netlify.app)
+- [Github Client Side Code](https://github.com/josemontano1996/react-calendar-app)
 
 ## Technologies Used
 
