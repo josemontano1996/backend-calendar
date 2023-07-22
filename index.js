@@ -9,7 +9,7 @@ const app = express();
 dbConnection();
 
 //CORS
-app.use(cors());
+app.use(cors({ origin: process.env.CLIENT_ORIGIN_URL }));
 
 //Public dir
 app.use(express.static('public'));
