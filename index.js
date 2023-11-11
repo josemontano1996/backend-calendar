@@ -1,6 +1,6 @@
 const express = require('express');
 require('dotenv').config();
-/* const cors = require('cors'); */
+const cors = require('cors');
 const { dbConnection } = require('./database/config');
 
 const app = express();
@@ -9,7 +9,7 @@ const app = express();
 dbConnection();
 
 //CORS
-/* app.use(cors({ origin: '*' })); */
+app.use(cors({ origin: process.env.CLIENT_ORIGIN_URL }));
 
 //Public dir
 app.use(express.static('public'));
