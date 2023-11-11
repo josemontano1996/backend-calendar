@@ -21,7 +21,6 @@ app.use(express.json());
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/events', require('./routes/eventsRoutes'));
 
-console.log(process.env.PORT, process.env.CLIENT_ORIGIN_URL);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running in port ${process.env.PORT}`);
