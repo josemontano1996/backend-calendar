@@ -8,7 +8,7 @@ Depending on who created the events different permissions for modifying the even
 
 You can visit our Client side app in the following links:
 
-- [Calendar Web](https://thriving-moonbeam-22f2bd.netlify.app)
+- [Calendar Web](https://react-calendar-app-iota.vercel.app)
 - [Github Client Side Code](https://github.com/josemontano1996/react-calendar-app)
 
 ## Technologies Used
